@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace Memorizacao
 {
-    public partial class FormPrincipal : Form
+    public partial class FormVerbosIrregulares : Form
     {
-        public FormPrincipal()
+        public FormVerbosIrregulares()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

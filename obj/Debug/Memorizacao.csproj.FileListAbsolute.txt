@@ -2,9 +2,9 @@ C:\Git\Memorizacao\bin\Debug\Memorizacao.exe.config
 C:\Git\Memorizacao\bin\Debug\Memorizacao.exe
 C:\Git\Memorizacao\bin\Debug\Memorizacao.pdb
 C:\Git\Memorizacao\obj\Debug\Memorizacao.csprojAssemblyReference.cache
-C:\Git\Memorizacao\obj\Debug\Memorizacao.FormPrincipal.resources
 C:\Git\Memorizacao\obj\Debug\Memorizacao.Properties.Resources.resources
 C:\Git\Memorizacao\obj\Debug\Memorizacao.csproj.GenerateResource.cache
 C:\Git\Memorizacao\obj\Debug\Memorizacao.csproj.CoreCompileInputs.cache
 C:\Git\Memorizacao\obj\Debug\Memorizacao.exe
 C:\Git\Memorizacao\obj\Debug\Memorizacao.pdb
+C:\Git\Memorizacao\obj\Debug\Memorizacao.FormVerbosIrregulares.resources
