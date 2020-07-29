@@ -65,14 +65,16 @@
             this.btEnviar = new System.Windows.Forms.Button();
             this.btLimpar = new System.Windows.Forms.Button();
             this.btProximo = new System.Windows.Forms.Button();
+            this.lbExemplo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbVerboIrregular
             // 
             this.lbVerboIrregular.AutoSize = true;
+            this.lbVerboIrregular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVerboIrregular.Location = new System.Drawing.Point(241, 100);
             this.lbVerboIrregular.Name = "lbVerboIrregular";
-            this.lbVerboIrregular.Size = new System.Drawing.Size(79, 13);
+            this.lbVerboIrregular.Size = new System.Drawing.Size(100, 16);
             this.lbVerboIrregular.TabIndex = 0;
             this.lbVerboIrregular.Text = "Verbo Irregular:";
             this.lbVerboIrregular.Click += new System.EventHandler(this.label1_Click);
@@ -80,9 +82,10 @@
             // lbVariavelVerboIrregular
             // 
             this.lbVariavelVerboIrregular.AutoSize = true;
+            this.lbVariavelVerboIrregular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVariavelVerboIrregular.Location = new System.Drawing.Point(378, 100);
             this.lbVariavelVerboIrregular.Name = "lbVariavelVerboIrregular";
-            this.lbVariavelVerboIrregular.Size = new System.Drawing.Size(13, 13);
+            this.lbVariavelVerboIrregular.Size = new System.Drawing.Size(19, 20);
             this.lbVariavelVerboIrregular.TabIndex = 1;
             this.lbVariavelVerboIrregular.Text = "?";
             // 
@@ -394,11 +397,23 @@
             this.btProximo.Text = "Próximo Verbo";
             this.btProximo.UseVisualStyleBackColor = true;
             // 
+            // lbExemplo
+            // 
+            this.lbExemplo.AutoSize = true;
+            this.lbExemplo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbExemplo.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lbExemplo.Location = new System.Drawing.Point(116, 92);
+            this.lbExemplo.Name = "lbExemplo";
+            this.lbExemplo.Size = new System.Drawing.Size(93, 24);
+            this.lbExemplo.TabIndex = 38;
+            this.lbExemplo.Text = "Exemplo";
+            // 
             // FormVerbosIrregulares
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(650, 463);
+            this.Controls.Add(this.lbExemplo);
             this.Controls.Add(this.btProximo);
             this.Controls.Add(this.btLimpar);
             this.Controls.Add(this.btEnviar);
@@ -436,6 +451,8 @@
             this.Controls.Add(this.lbVariavelTraducao);
             this.Controls.Add(this.lbVariavelVerboIrregular);
             this.Controls.Add(this.lbVerboIrregular);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormVerbosIrregulares";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Verbos Irregulares";
@@ -483,6 +500,7 @@
         private System.Windows.Forms.Button btEnviar;
         private System.Windows.Forms.Button btLimpar;
         private System.Windows.Forms.Button btProximo;
+        private System.Windows.Forms.Label lbExemplo;
     }
 }
 

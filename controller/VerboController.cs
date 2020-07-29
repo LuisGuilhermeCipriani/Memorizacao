@@ -41,6 +41,14 @@ namespace Memorizacao.controller
             return listaIncorretos;
         }
 
+        public void preencheListaVerbos()
+        {
+            Verbo verbo1 = new Verbo(1, "Arise", "To arise", "Arose", "Arisen", "Erguer, levantar");
+            listaVerbos.Add(verbo1);
+
+            Verbo verbo2 = new Verbo(1, "Awake", "To awake", "Awoke", "Awoken", "Acordar, despertar");
+            listaVerbos.Add(verbo2);
+        }
 
     }
 }
