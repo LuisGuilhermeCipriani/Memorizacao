@@ -106,6 +106,7 @@
             this.btTraducao.TabIndex = 4;
             this.btTraducao.Text = "Ver Resposta";
             this.btTraducao.UseVisualStyleBackColor = true;
+            this.btTraducao.Click += new System.EventHandler(this.btTraducao_Click);
             // 
             // Infinitivo
             // 
@@ -142,6 +143,7 @@
             this.btInfinitivo.TabIndex = 8;
             this.btInfinitivo.Text = "Ver Resposta";
             this.btInfinitivo.UseVisualStyleBackColor = true;
+            this.btInfinitivo.Click += new System.EventHandler(this.btInfinitivo_Click);
             // 
             // btPassadoSimples
             // 
@@ -151,6 +153,7 @@
             this.btPassadoSimples.TabIndex = 9;
             this.btPassadoSimples.Text = "Ver Resposta";
             this.btPassadoSimples.UseVisualStyleBackColor = true;
+            this.btPassadoSimples.Click += new System.EventHandler(this.btPassadoSimples_Click);
             // 
             // btParticipioPassado
             // 
@@ -160,6 +163,7 @@
             this.btParticipioPassado.TabIndex = 10;
             this.btParticipioPassado.Text = "Ver Resposta";
             this.btParticipioPassado.UseVisualStyleBackColor = true;
+            this.btParticipioPassado.Click += new System.EventHandler(this.btParticipioPassado_Click);
             // 
             // tbInfinitivo
             // 
