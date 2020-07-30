@@ -46,9 +46,56 @@ namespace Memorizacao.controller
             Verbo verbo1 = new Verbo(1, "Arise", "To arise", "Arose", "Arisen", "Erguer, levantar");
             listaVerbos.Add(verbo1);
 
-            Verbo verbo2 = new Verbo(1, "Awake", "To awake", "Awoke", "Awoken", "Acordar, despertar");
+            Verbo verbo2 = new Verbo(2, "Awake", "To awake", "Awoke", "Awoken", "Acordar, despertar");
             listaVerbos.Add(verbo2);
         }
 
+        public Boolean verificaInfinitivo(String infinitivo, Verbo palavra)
+        {
+            if (infinitivo.Equals(palavra.getInfinitivo()))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public Boolean verificaPassadoSimples(String passadoSimples, Verbo palavra)
+        {
+            if (passadoSimples.Equals(palavra.gepassadoSimples()))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public Boolean verificaParticipioPassado(String participioPassado, Verbo palavra)
+        {
+            if (participioPassado.Equals(palavra.getparticipioPassado()))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public Boolean verificaTraducao(String traducao, Verbo palavra)
+        {
+            if (traducao.Equals(palavra.gettraducao()))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

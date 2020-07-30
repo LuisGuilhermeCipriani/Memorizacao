@@ -391,6 +391,7 @@
             this.btLimpar.TabIndex = 36;
             this.btLimpar.Text = "Limpar Campos";
             this.btLimpar.UseVisualStyleBackColor = true;
+            this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click);
             // 
             // btProximo
             // 
@@ -400,6 +401,7 @@
             this.btProximo.TabIndex = 37;
             this.btProximo.Text = "Próximo Verbo";
             this.btProximo.UseVisualStyleBackColor = true;
+            this.btProximo.Click += new System.EventHandler(this.btProximo_Click);
             // 
             // lbExemplo
             // 

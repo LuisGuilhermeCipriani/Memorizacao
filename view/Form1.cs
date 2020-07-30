@@ -25,8 +25,8 @@ namespace Memorizacao
             verboController.preencheListaVerbos();
             verbo = verboController.getListaVerbos()[num];
 
-            lbVariavelAcertos.Text = "0";
-            lbVariavelErros.Text = "0";
+            lbVariavelAcertos.Text = verboController.getlistaCorretos().Count().ToString();
+            lbVariavelErros.Text = verboController.getlistaIncorretos().Count().ToString();
 
             inicializarExemplo();
             desativarTudo();
@@ -71,11 +71,113 @@ namespace Memorizacao
             lbVariavelParticipioPassado.Text = verbo.getparticipioPassado();
             lbVariavelTraducao.Text = verbo.gettraducao();
 
-            lbVariavelAcertos.Text = "0";
-            lbVariavelErros.Text = "0";
-
-            lbVariavelPalavra.Text = "1";
+            lbVariavelPalavra.Text = verbo.getId().ToString();
             lbVariavelTotal.Text = verboController.getListaVerbos().Count.ToString();
+        }
+
+        private void liberarTudo()
+        {
+            lbVariavelInfinitivo.Text = "?";
+            lbVariavelPassadoSimples.Text = "?";
+            lbVariavelParticipioPassado.Text = "?";
+            lbVariavelTraducao.Text = "?";
+
+            btInfinitivo.Enabled = true;
+            btPassadoSimples.Enabled = true;
+            btParticipioPassado.Enabled = true;
+            btTraducao.Enabled = true;
+
+            tbInfinitivo.Enabled = true;
+            tbPassadoSimples.Enabled = true;
+            tbParticipioPassado.Enabled = true;
+            tbTraducao.Enabled = true;
+
+            btEnviar.Enabled = true;
+            btLimpar.Enabled = true;
+        }
+
+        private void analisarespostaInfinitivo()
+        {
+            if (!tbInfinitivo.Text.Equals(""))
+            {
+                if (verboController.verificaInfinitivo(tbInfinitivo.Text, verbo))
+                {
+                    verboController.getlistaCorretos().Add(verbo);
+                    lbCorretoInfinitivo.Visible = true;
+                    lbIncorretoInfinitivo.Visible = false;
+                }
+                else
+                {
+                    verboController.getlistaIncorretos().Add(verbo);
+                    lbIncorretoInfinitivo.Visible = true;
+                    lbCorretoInfinitivo.Visible = false;
+                }
+            }
+
+            tbInfinitivo.Enabled = false;
+        }
+
+        private void analisarespostaPassadoSimples()
+        {
+            if (!tbPassadoSimples.Text.Equals(""))
+            {
+                if (verboController.verificaPassadoSimples(tbPassadoSimples.Text, verbo))
+                {
+                    verboController.getlistaCorretos().Add(verbo);
+                    lbCorretoPassadoSimples.Visible = true;
+                    lbIncorretoPassadoSimples.Visible = false;
+                }
+                else
+                {
+                    verboController.getlistaIncorretos().Add(verbo);
+                    lbIncorretoPassadoSimples.Visible = true;
+                    lbCorretoPassadoSimples.Visible = false;
+                }
+            }
+
+            tbPassadoSimples.Enabled = false;
+        }
+
+        private void analisarespostaParticipioPassado()
+        {
+            if (!tbParticipioPassado.Text.Equals(""))
+            {
+                if (verboController.verificaParticipioPassado(tbParticipioPassado.Text, verbo))
+                {
+                    verboController.getlistaCorretos().Add(verbo);
+                    lbCorretoParticipioPassado.Visible = true;
+                    lbIncorretoParticipioPassado.Visible = false;
+                }
+                else
+                {
+                    verboController.getlistaIncorretos().Add(verbo);
+                    lbIncorretoParticipioPassado.Visible = true;
+                    lbCorretoParticipioPassado.Visible = false;
+                }
+            }
+
+            tbParticipioPassado.Enabled = false;
+        }
+
+        private void analisarespostaTraducao()
+        {
+            if (!tbTraducao.Text.Equals(""))
+            {
+                if (verboController.verificaTraducao(tbTraducao.Text, verbo))
+                {
+                    verboController.getlistaCorretos().Add(verbo);
+                    lbCorretoTraducao.Visible = true;
+                    lbIncorretoTraducao.Visible = false;
+                }
+                else
+                {
+                    verboController.getlistaIncorretos().Add(verbo);
+                    lbIncorretoTraducao.Visible = true;
+                    lbCorretoTraducao.Visible = false;
+                }
+            }
+
+            tbTraducao.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -95,7 +197,16 @@ namespace Memorizacao
 
         private void btEnviar_Click(object sender, EventArgs e)
         {
+            analisarespostaInfinitivo();
+            analisarespostaPassadoSimples();
+            analisarespostaParticipioPassado();
+            analisarespostaTraducao();
 
+            lbVariavelAcertos.Text = verboController.getlistaCorretos().Count.ToString();
+            lbVariavelErros.Text = verboController.getlistaIncorretos().Count.ToString();
+
+            btEnviar.Enabled = false;
+            btLimpar.Enabled = false;
         }
 
         private void btInfinitivo_Click(object sender, EventArgs e)
@@ -116,6 +227,33 @@ namespace Memorizacao
         private void btTraducao_Click(object sender, EventArgs e)
         {
             lbVariavelTraducao.Text = verbo.gettraducao();
+        }
+
+        private void btProximo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                num++;
+                lbExemplo.Visible = false;
+                verbo = verboController.getListaVerbos()[num];
+                lbVariavelVerboIrregular.Text = verbo.getNome();
+                liberarTudo();
+                lbVariavelPalavra.Text = verbo.getId().ToString();
+                if (verbo.getId() == verboController.getListaVerbos().Count())
+                {
+                    btProximo.Enabled = false;
+                }
+            }catch(System.ArgumentOutOfRangeException){
+            }
+        }
+
+        private void btLimpar_Click(object sender, EventArgs e)
+        {
+            tbInfinitivo.Text = "";
+            tbPassadoSimples.Text = "";
+            tbParticipioPassado.Text = "";
+            tbTraducao.Text = "";
+            tbInfinitivo.Focus();
         }
     }
 }
