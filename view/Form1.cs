@@ -100,7 +100,8 @@ namespace Memorizacao
         {
             if (!tbInfinitivo.Text.Equals(""))
             {
-                if (verboController.verificaInfinitivo(tbInfinitivo.Text, verbo))
+                String texto = verboController.removeAcentos(tbInfinitivo.Text.ToLower());
+                if (verboController.verificaInfinitivo(texto, verbo))
                 {
                     verboController.getlistaCorretos().Add(verbo);
                     lbCorretoInfinitivo.Visible = true;
@@ -121,7 +122,8 @@ namespace Memorizacao
         {
             if (!tbPassadoSimples.Text.Equals(""))
             {
-                if (verboController.verificaPassadoSimples(tbPassadoSimples.Text, verbo))
+                String texto = verboController.removeAcentos(tbPassadoSimples.Text.ToLower());
+                if (verboController.verificaPassadoSimples(texto, verbo))
                 {
                     verboController.getlistaCorretos().Add(verbo);
                     lbCorretoPassadoSimples.Visible = true;
@@ -142,7 +144,8 @@ namespace Memorizacao
         {
             if (!tbParticipioPassado.Text.Equals(""))
             {
-                if (verboController.verificaParticipioPassado(tbParticipioPassado.Text, verbo))
+                String texto = verboController.removeAcentos(tbParticipioPassado.Text.ToLower());
+                if (verboController.verificaParticipioPassado(texto, verbo))
                 {
                     verboController.getlistaCorretos().Add(verbo);
                     lbCorretoParticipioPassado.Visible = true;
@@ -163,7 +166,8 @@ namespace Memorizacao
         {
             if (!tbTraducao.Text.Equals(""))
             {
-                if (verboController.verificaTraducao(tbTraducao.Text, verbo))
+                String texto = verboController.removeAcentos(tbTraducao.Text.ToLower());
+                if (verboController.verificaTraducao(texto, verbo))
                 {
                     verboController.getlistaCorretos().Add(verbo);
                     lbCorretoTraducao.Visible = true;

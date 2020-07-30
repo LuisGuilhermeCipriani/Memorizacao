@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,7 +53,7 @@ namespace Memorizacao.controller
 
         public Boolean verificaInfinitivo(String infinitivo, Verbo palavra)
         {
-            if (infinitivo.Equals(palavra.getInfinitivo()))
+            if (infinitivo.Equals(removeAcentos(palavra.getInfinitivo().ToLower())))
             {
                 return true;
             }
@@ -64,7 +65,7 @@ namespace Memorizacao.controller
 
         public Boolean verificaPassadoSimples(String passadoSimples, Verbo palavra)
         {
-            if (passadoSimples.Equals(palavra.gepassadoSimples()))
+            if (passadoSimples.Equals(removeAcentos(palavra.gepassadoSimples().ToLower())))
             {
                 return true;
             }
@@ -76,7 +77,7 @@ namespace Memorizacao.controller
 
         public Boolean verificaParticipioPassado(String participioPassado, Verbo palavra)
         {
-            if (participioPassado.Equals(palavra.getparticipioPassado()))
+            if (participioPassado.Equals(removeAcentos(palavra.getparticipioPassado().ToLower())))
             {
                 return true;
             }
@@ -88,7 +89,7 @@ namespace Memorizacao.controller
 
         public Boolean verificaTraducao(String traducao, Verbo palavra)
         {
-            if (traducao.Equals(palavra.gettraducao()))
+            if (traducao.Equals(removeAcentos(palavra.gettraducao().ToLower())))
             {
                 return true;
             }
@@ -96,6 +97,18 @@ namespace Memorizacao.controller
             {
                 return false;
             }
+        }
+
+        public string removeAcentos(string texto)
+        {
+            StringBuilder textoRetorno = new StringBuilder();
+            var arrayTexto = texto.Normalize(NormalizationForm.FormD).ToCharArray();
+            foreach (char letra in arrayTexto)
+            {
+                if (CharUnicodeInfo.GetUnicodeCategory(letra) != UnicodeCategory.NonSpacingMark)
+                    textoRetorno.Append(letra);
+            }
+            return textoRetorno.ToString();
         }
     }
 }
