@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVerbosIrregulares));
             this.lbVerboIrregular = new System.Windows.Forms.Label();
             this.lbVariavelVerboIrregular = new System.Windows.Forms.Label();
             this.lbVariavelTraducao = new System.Windows.Forms.Label();
@@ -66,340 +67,425 @@
             this.btLimpar = new System.Windows.Forms.Button();
             this.btProximo = new System.Windows.Forms.Button();
             this.lbExemplo = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbVerboIrregular
             // 
             this.lbVerboIrregular.AutoSize = true;
-            this.lbVerboIrregular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVerboIrregular.Location = new System.Drawing.Point(241, 100);
+            this.lbVerboIrregular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVerboIrregular.ForeColor = System.Drawing.Color.White;
+            this.lbVerboIrregular.Image = ((System.Drawing.Image)(resources.GetObject("lbVerboIrregular.Image")));
+            this.lbVerboIrregular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbVerboIrregular.Location = new System.Drawing.Point(438, 21);
             this.lbVerboIrregular.Name = "lbVerboIrregular";
-            this.lbVerboIrregular.Size = new System.Drawing.Size(100, 16);
+            this.lbVerboIrregular.Size = new System.Drawing.Size(160, 20);
             this.lbVerboIrregular.TabIndex = 0;
-            this.lbVerboIrregular.Text = "Verbo Irregular:";
+            this.lbVerboIrregular.Text = "     Verbo Irregular:";
             this.lbVerboIrregular.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbVariavelVerboIrregular
             // 
             this.lbVariavelVerboIrregular.AutoSize = true;
-            this.lbVariavelVerboIrregular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVariavelVerboIrregular.Location = new System.Drawing.Point(378, 100);
+            this.lbVariavelVerboIrregular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVariavelVerboIrregular.ForeColor = System.Drawing.Color.Black;
+            this.lbVariavelVerboIrregular.Location = new System.Drawing.Point(604, 18);
             this.lbVariavelVerboIrregular.Name = "lbVariavelVerboIrregular";
-            this.lbVariavelVerboIrregular.Size = new System.Drawing.Size(19, 20);
+            this.lbVariavelVerboIrregular.Size = new System.Drawing.Size(21, 24);
             this.lbVariavelVerboIrregular.TabIndex = 1;
             this.lbVariavelVerboIrregular.Text = "?";
             // 
             // lbVariavelTraducao
             // 
             this.lbVariavelTraducao.AutoSize = true;
-            this.lbVariavelTraducao.Location = new System.Drawing.Point(528, 218);
+            this.lbVariavelTraducao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVariavelTraducao.Location = new System.Drawing.Point(790, 85);
             this.lbVariavelTraducao.Name = "lbVariavelTraducao";
-            this.lbVariavelTraducao.Size = new System.Drawing.Size(13, 13);
+            this.lbVariavelTraducao.Size = new System.Drawing.Size(16, 16);
             this.lbVariavelTraducao.TabIndex = 3;
             this.lbVariavelTraducao.Text = "?";
             // 
             // btTraducao
             // 
-            this.btTraducao.Location = new System.Drawing.Point(487, 269);
+            this.btTraducao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTraducao.Image = ((System.Drawing.Image)(resources.GetObject("btTraducao.Image")));
+            this.btTraducao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btTraducao.Location = new System.Drawing.Point(793, 136);
             this.btTraducao.Name = "btTraducao";
-            this.btTraducao.Size = new System.Drawing.Size(100, 23);
+            this.btTraducao.Size = new System.Drawing.Size(111, 23);
             this.btTraducao.TabIndex = 4;
-            this.btTraducao.Text = "Ver Resposta";
+            this.btTraducao.Text = "     Ver Resposta";
             this.btTraducao.UseVisualStyleBackColor = true;
             this.btTraducao.Click += new System.EventHandler(this.btTraducao_Click);
             // 
             // Infinitivo
             // 
             this.Infinitivo.AutoSize = true;
-            this.Infinitivo.Location = new System.Drawing.Point(89, 172);
+            this.Infinitivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Infinitivo.Image = ((System.Drawing.Image)(resources.GetObject("Infinitivo.Image")));
+            this.Infinitivo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Infinitivo.Location = new System.Drawing.Point(160, 37);
             this.Infinitivo.Name = "Infinitivo";
-            this.Infinitivo.Size = new System.Drawing.Size(46, 13);
+            this.Infinitivo.Size = new System.Drawing.Size(90, 18);
             this.Infinitivo.TabIndex = 5;
-            this.Infinitivo.Text = "Infinitivo";
+            this.Infinitivo.Text = "    Infinitivo";
             // 
             // PassadoSimples
             // 
             this.PassadoSimples.AutoSize = true;
-            this.PassadoSimples.Location = new System.Drawing.Point(195, 172);
+            this.PassadoSimples.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PassadoSimples.Image = ((System.Drawing.Image)(resources.GetObject("PassadoSimples.Image")));
+            this.PassadoSimples.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PassadoSimples.Location = new System.Drawing.Point(335, 37);
             this.PassadoSimples.Name = "PassadoSimples";
-            this.PassadoSimples.Size = new System.Drawing.Size(87, 13);
+            this.PassadoSimples.Size = new System.Drawing.Size(159, 18);
             this.PassadoSimples.TabIndex = 6;
-            this.PassadoSimples.Text = "Passado Simples";
+            this.PassadoSimples.Text = "    Passado Simples";
             // 
             // ParticipioPassado
             // 
             this.ParticipioPassado.AutoSize = true;
-            this.ParticipioPassado.Location = new System.Drawing.Point(334, 172);
+            this.ParticipioPassado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ParticipioPassado.Image = ((System.Drawing.Image)(resources.GetObject("ParticipioPassado.Image")));
+            this.ParticipioPassado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ParticipioPassado.Location = new System.Drawing.Point(548, 37);
             this.ParticipioPassado.Name = "ParticipioPassado";
-            this.ParticipioPassado.Size = new System.Drawing.Size(96, 13);
+            this.ParticipioPassado.Size = new System.Drawing.Size(170, 18);
             this.ParticipioPassado.TabIndex = 7;
-            this.ParticipioPassado.Text = "Particípio Passado";
+            this.ParticipioPassado.Text = "    Particípio Passado";
             // 
             // btInfinitivo
             // 
-            this.btInfinitivo.Location = new System.Drawing.Point(58, 269);
+            this.btInfinitivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInfinitivo.Image = ((System.Drawing.Image)(resources.GetObject("btInfinitivo.Image")));
+            this.btInfinitivo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btInfinitivo.Location = new System.Drawing.Point(163, 136);
             this.btInfinitivo.Name = "btInfinitivo";
-            this.btInfinitivo.Size = new System.Drawing.Size(99, 23);
+            this.btInfinitivo.Size = new System.Drawing.Size(111, 23);
             this.btInfinitivo.TabIndex = 8;
-            this.btInfinitivo.Text = "Ver Resposta";
+            this.btInfinitivo.Text = "     Ver Resposta";
             this.btInfinitivo.UseVisualStyleBackColor = true;
             this.btInfinitivo.Click += new System.EventHandler(this.btInfinitivo_Click);
             // 
             // btPassadoSimples
             // 
-            this.btPassadoSimples.Location = new System.Drawing.Point(198, 269);
+            this.btPassadoSimples.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPassadoSimples.Image = ((System.Drawing.Image)(resources.GetObject("btPassadoSimples.Image")));
+            this.btPassadoSimples.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btPassadoSimples.Location = new System.Drawing.Point(338, 136);
             this.btPassadoSimples.Name = "btPassadoSimples";
-            this.btPassadoSimples.Size = new System.Drawing.Size(99, 23);
+            this.btPassadoSimples.Size = new System.Drawing.Size(112, 23);
             this.btPassadoSimples.TabIndex = 9;
-            this.btPassadoSimples.Text = "Ver Resposta";
+            this.btPassadoSimples.Text = "     Ver Resposta";
             this.btPassadoSimples.UseVisualStyleBackColor = true;
             this.btPassadoSimples.Click += new System.EventHandler(this.btPassadoSimples_Click);
             // 
             // btParticipioPassado
             // 
-            this.btParticipioPassado.Location = new System.Drawing.Point(337, 269);
+            this.btParticipioPassado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btParticipioPassado.Image = ((System.Drawing.Image)(resources.GetObject("btParticipioPassado.Image")));
+            this.btParticipioPassado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btParticipioPassado.Location = new System.Drawing.Point(556, 136);
             this.btParticipioPassado.Name = "btParticipioPassado";
-            this.btParticipioPassado.Size = new System.Drawing.Size(99, 23);
+            this.btParticipioPassado.Size = new System.Drawing.Size(111, 23);
             this.btParticipioPassado.TabIndex = 10;
-            this.btParticipioPassado.Text = "Ver Resposta";
+            this.btParticipioPassado.Text = "     Ver Resposta";
             this.btParticipioPassado.UseVisualStyleBackColor = true;
             this.btParticipioPassado.Click += new System.EventHandler(this.btParticipioPassado_Click);
             // 
             // tbInfinitivo
             // 
-            this.tbInfinitivo.Location = new System.Drawing.Point(57, 359);
+            this.tbInfinitivo.Location = new System.Drawing.Point(162, 226);
             this.tbInfinitivo.Name = "tbInfinitivo";
-            this.tbInfinitivo.Size = new System.Drawing.Size(100, 20);
+            this.tbInfinitivo.Size = new System.Drawing.Size(112, 20);
             this.tbInfinitivo.TabIndex = 11;
             // 
             // tbPassadoSimples
             // 
-            this.tbPassadoSimples.Location = new System.Drawing.Point(198, 359);
+            this.tbPassadoSimples.Location = new System.Drawing.Point(338, 226);
             this.tbPassadoSimples.Name = "tbPassadoSimples";
-            this.tbPassadoSimples.Size = new System.Drawing.Size(100, 20);
+            this.tbPassadoSimples.Size = new System.Drawing.Size(112, 20);
             this.tbPassadoSimples.TabIndex = 12;
             // 
             // tbParticipioPassado
             // 
-            this.tbParticipioPassado.Location = new System.Drawing.Point(337, 359);
+            this.tbParticipioPassado.Location = new System.Drawing.Point(556, 226);
             this.tbParticipioPassado.Name = "tbParticipioPassado";
-            this.tbParticipioPassado.Size = new System.Drawing.Size(100, 20);
+            this.tbParticipioPassado.Size = new System.Drawing.Size(111, 20);
             this.tbParticipioPassado.TabIndex = 13;
             // 
             // lbVariavelInfinitivo
             // 
             this.lbVariavelInfinitivo.AutoSize = true;
-            this.lbVariavelInfinitivo.Location = new System.Drawing.Point(100, 218);
+            this.lbVariavelInfinitivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVariavelInfinitivo.Location = new System.Drawing.Point(161, 85);
             this.lbVariavelInfinitivo.Name = "lbVariavelInfinitivo";
-            this.lbVariavelInfinitivo.Size = new System.Drawing.Size(13, 13);
+            this.lbVariavelInfinitivo.Size = new System.Drawing.Size(16, 16);
             this.lbVariavelInfinitivo.TabIndex = 14;
             this.lbVariavelInfinitivo.Text = "?";
             // 
             // lbVariavelPassadoSimples
             // 
             this.lbVariavelPassadoSimples.AutoSize = true;
-            this.lbVariavelPassadoSimples.Location = new System.Drawing.Point(241, 218);
+            this.lbVariavelPassadoSimples.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVariavelPassadoSimples.Location = new System.Drawing.Point(335, 85);
             this.lbVariavelPassadoSimples.Name = "lbVariavelPassadoSimples";
-            this.lbVariavelPassadoSimples.Size = new System.Drawing.Size(13, 13);
+            this.lbVariavelPassadoSimples.Size = new System.Drawing.Size(16, 16);
             this.lbVariavelPassadoSimples.TabIndex = 15;
             this.lbVariavelPassadoSimples.Text = "?";
             // 
             // lbVariavelParticipioPassado
             // 
             this.lbVariavelParticipioPassado.AutoSize = true;
-            this.lbVariavelParticipioPassado.Location = new System.Drawing.Point(378, 218);
+            this.lbVariavelParticipioPassado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVariavelParticipioPassado.Location = new System.Drawing.Point(553, 85);
             this.lbVariavelParticipioPassado.Name = "lbVariavelParticipioPassado";
-            this.lbVariavelParticipioPassado.Size = new System.Drawing.Size(13, 13);
+            this.lbVariavelParticipioPassado.Size = new System.Drawing.Size(16, 16);
             this.lbVariavelParticipioPassado.TabIndex = 16;
             this.lbVariavelParticipioPassado.Text = "?";
             // 
             // Traducao
             // 
             this.Traducao.AutoSize = true;
-            this.Traducao.Location = new System.Drawing.Point(503, 172);
+            this.Traducao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Traducao.Image = ((System.Drawing.Image)(resources.GetObject("Traducao.Image")));
+            this.Traducao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Traducao.Location = new System.Drawing.Point(790, 37);
             this.Traducao.Name = "Traducao";
-            this.Traducao.Size = new System.Drawing.Size(53, 13);
+            this.Traducao.Size = new System.Drawing.Size(99, 18);
             this.Traducao.TabIndex = 17;
-            this.Traducao.Text = "Tradução";
+            this.Traducao.Text = "    Tradução";
             // 
             // tbTraducao
             // 
-            this.tbTraducao.Location = new System.Drawing.Point(487, 359);
+            this.tbTraducao.Location = new System.Drawing.Point(793, 226);
             this.tbTraducao.Name = "tbTraducao";
-            this.tbTraducao.Size = new System.Drawing.Size(100, 20);
+            this.tbTraducao.Size = new System.Drawing.Size(111, 20);
             this.tbTraducao.TabIndex = 18;
             // 
             // lbPalavra
             // 
             this.lbPalavra.AutoSize = true;
-            this.lbPalavra.Location = new System.Drawing.Point(77, 31);
+            this.lbPalavra.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPalavra.ForeColor = System.Drawing.Color.White;
+            this.lbPalavra.Location = new System.Drawing.Point(54, 23);
             this.lbPalavra.Name = "lbPalavra";
-            this.lbPalavra.Size = new System.Drawing.Size(43, 13);
+            this.lbPalavra.Size = new System.Drawing.Size(64, 18);
             this.lbPalavra.TabIndex = 19;
             this.lbPalavra.Text = "Palavra";
             // 
             // lbVariavelPalavra
             // 
             this.lbVariavelPalavra.AutoSize = true;
-            this.lbVariavelPalavra.Location = new System.Drawing.Point(140, 31);
+            this.lbVariavelPalavra.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVariavelPalavra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lbVariavelPalavra.Location = new System.Drawing.Point(119, 23);
             this.lbVariavelPalavra.Name = "lbVariavelPalavra";
-            this.lbVariavelPalavra.Size = new System.Drawing.Size(13, 13);
+            this.lbVariavelPalavra.Size = new System.Drawing.Size(17, 18);
             this.lbVariavelPalavra.TabIndex = 20;
             this.lbVariavelPalavra.Text = "?";
             // 
             // lbDe
             // 
             this.lbDe.AutoSize = true;
-            this.lbDe.Location = new System.Drawing.Point(174, 31);
+            this.lbDe.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDe.ForeColor = System.Drawing.Color.White;
+            this.lbDe.Location = new System.Drawing.Point(160, 23);
             this.lbDe.Name = "lbDe";
-            this.lbDe.Size = new System.Drawing.Size(19, 13);
+            this.lbDe.Size = new System.Drawing.Size(26, 18);
             this.lbDe.TabIndex = 21;
             this.lbDe.Text = "de";
             // 
             // lbVariavelTotal
             // 
             this.lbVariavelTotal.AutoSize = true;
-            this.lbVariavelTotal.Location = new System.Drawing.Point(219, 31);
+            this.lbVariavelTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVariavelTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lbVariavelTotal.Location = new System.Drawing.Point(192, 23);
             this.lbVariavelTotal.Name = "lbVariavelTotal";
-            this.lbVariavelTotal.Size = new System.Drawing.Size(13, 13);
+            this.lbVariavelTotal.Size = new System.Drawing.Size(17, 18);
             this.lbVariavelTotal.TabIndex = 22;
             this.lbVariavelTotal.Text = "?";
             // 
             // lbAcertos
             // 
             this.lbAcertos.AutoSize = true;
-            this.lbAcertos.Location = new System.Drawing.Point(503, 31);
+            this.lbAcertos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAcertos.ForeColor = System.Drawing.Color.White;
+            this.lbAcertos.Image = ((System.Drawing.Image)(resources.GetObject("lbAcertos.Image")));
+            this.lbAcertos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbAcertos.Location = new System.Drawing.Point(828, 13);
             this.lbAcertos.Name = "lbAcertos";
-            this.lbAcertos.Size = new System.Drawing.Size(43, 13);
+            this.lbAcertos.Size = new System.Drawing.Size(96, 18);
             this.lbAcertos.TabIndex = 23;
-            this.lbAcertos.Text = "Acertos";
+            this.lbAcertos.Text = "      Acertos";
             // 
             // lbErros
             // 
             this.lbErros.AutoSize = true;
-            this.lbErros.Location = new System.Drawing.Point(576, 31);
+            this.lbErros.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbErros.ForeColor = System.Drawing.Color.White;
+            this.lbErros.Image = ((System.Drawing.Image)(resources.GetObject("lbErros.Image")));
+            this.lbErros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbErros.Location = new System.Drawing.Point(935, 13);
             this.lbErros.Name = "lbErros";
-            this.lbErros.Size = new System.Drawing.Size(31, 13);
+            this.lbErros.Size = new System.Drawing.Size(80, 18);
             this.lbErros.TabIndex = 24;
-            this.lbErros.Text = "Erros";
+            this.lbErros.Text = "      Erros";
             // 
             // lbVariavelAcertos
             // 
             this.lbVariavelAcertos.AutoSize = true;
-            this.lbVariavelAcertos.Location = new System.Drawing.Point(518, 58);
+            this.lbVariavelAcertos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVariavelAcertos.ForeColor = System.Drawing.Color.White;
+            this.lbVariavelAcertos.Location = new System.Drawing.Point(877, 40);
             this.lbVariavelAcertos.Name = "lbVariavelAcertos";
-            this.lbVariavelAcertos.Size = new System.Drawing.Size(13, 13);
+            this.lbVariavelAcertos.Size = new System.Drawing.Size(17, 18);
             this.lbVariavelAcertos.TabIndex = 25;
             this.lbVariavelAcertos.Text = "?";
             // 
             // lbVariavelErros
             // 
             this.lbVariavelErros.AutoSize = true;
-            this.lbVariavelErros.Location = new System.Drawing.Point(585, 58);
+            this.lbVariavelErros.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVariavelErros.ForeColor = System.Drawing.Color.White;
+            this.lbVariavelErros.Location = new System.Drawing.Point(977, 40);
             this.lbVariavelErros.Name = "lbVariavelErros";
-            this.lbVariavelErros.Size = new System.Drawing.Size(13, 13);
+            this.lbVariavelErros.Size = new System.Drawing.Size(17, 18);
             this.lbVariavelErros.TabIndex = 26;
             this.lbVariavelErros.Text = "?";
             // 
             // lbCorretoInfinitivo
             // 
             this.lbCorretoInfinitivo.AutoSize = true;
-            this.lbCorretoInfinitivo.Location = new System.Drawing.Point(85, 304);
+            this.lbCorretoInfinitivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCorretoInfinitivo.ForeColor = System.Drawing.Color.Green;
+            this.lbCorretoInfinitivo.Location = new System.Drawing.Point(184, 171);
             this.lbCorretoInfinitivo.Name = "lbCorretoInfinitivo";
-            this.lbCorretoInfinitivo.Size = new System.Drawing.Size(41, 13);
+            this.lbCorretoInfinitivo.Size = new System.Drawing.Size(59, 16);
             this.lbCorretoInfinitivo.TabIndex = 27;
             this.lbCorretoInfinitivo.Text = "Correto";
             // 
             // lbIncorretoInfinitivo
             // 
             this.lbIncorretoInfinitivo.AutoSize = true;
-            this.lbIncorretoInfinitivo.Location = new System.Drawing.Point(85, 332);
+            this.lbIncorretoInfinitivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIncorretoInfinitivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbIncorretoInfinitivo.Location = new System.Drawing.Point(184, 199);
             this.lbIncorretoInfinitivo.Name = "lbIncorretoInfinitivo";
-            this.lbIncorretoInfinitivo.Size = new System.Drawing.Size(49, 13);
+            this.lbIncorretoInfinitivo.Size = new System.Drawing.Size(69, 16);
             this.lbIncorretoInfinitivo.TabIndex = 28;
             this.lbIncorretoInfinitivo.Text = "Incorreto";
             // 
             // lbIncorretoPassadoSimples
             // 
             this.lbIncorretoPassadoSimples.AutoSize = true;
-            this.lbIncorretoPassadoSimples.Location = new System.Drawing.Point(229, 332);
+            this.lbIncorretoPassadoSimples.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIncorretoPassadoSimples.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbIncorretoPassadoSimples.Location = new System.Drawing.Point(360, 199);
             this.lbIncorretoPassadoSimples.Name = "lbIncorretoPassadoSimples";
-            this.lbIncorretoPassadoSimples.Size = new System.Drawing.Size(49, 13);
+            this.lbIncorretoPassadoSimples.Size = new System.Drawing.Size(69, 16);
             this.lbIncorretoPassadoSimples.TabIndex = 30;
             this.lbIncorretoPassadoSimples.Text = "Incorreto";
             // 
             // lbCorretoPassadoSimples
             // 
             this.lbCorretoPassadoSimples.AutoSize = true;
-            this.lbCorretoPassadoSimples.Location = new System.Drawing.Point(229, 304);
+            this.lbCorretoPassadoSimples.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCorretoPassadoSimples.ForeColor = System.Drawing.Color.Green;
+            this.lbCorretoPassadoSimples.Location = new System.Drawing.Point(360, 171);
             this.lbCorretoPassadoSimples.Name = "lbCorretoPassadoSimples";
-            this.lbCorretoPassadoSimples.Size = new System.Drawing.Size(41, 13);
+            this.lbCorretoPassadoSimples.Size = new System.Drawing.Size(59, 16);
             this.lbCorretoPassadoSimples.TabIndex = 29;
             this.lbCorretoPassadoSimples.Text = "Correto";
             // 
             // lbIncorretoParticipioPassado
             // 
             this.lbIncorretoParticipioPassado.AutoSize = true;
-            this.lbIncorretoParticipioPassado.Location = new System.Drawing.Point(365, 332);
+            this.lbIncorretoParticipioPassado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIncorretoParticipioPassado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbIncorretoParticipioPassado.Location = new System.Drawing.Point(578, 199);
             this.lbIncorretoParticipioPassado.Name = "lbIncorretoParticipioPassado";
-            this.lbIncorretoParticipioPassado.Size = new System.Drawing.Size(49, 13);
+            this.lbIncorretoParticipioPassado.Size = new System.Drawing.Size(69, 16);
             this.lbIncorretoParticipioPassado.TabIndex = 32;
             this.lbIncorretoParticipioPassado.Text = "Incorreto";
             // 
             // lbCorretoParticipioPassado
             // 
             this.lbCorretoParticipioPassado.AutoSize = true;
-            this.lbCorretoParticipioPassado.Location = new System.Drawing.Point(365, 304);
+            this.lbCorretoParticipioPassado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCorretoParticipioPassado.ForeColor = System.Drawing.Color.Green;
+            this.lbCorretoParticipioPassado.Location = new System.Drawing.Point(578, 171);
             this.lbCorretoParticipioPassado.Name = "lbCorretoParticipioPassado";
-            this.lbCorretoParticipioPassado.Size = new System.Drawing.Size(41, 13);
+            this.lbCorretoParticipioPassado.Size = new System.Drawing.Size(59, 16);
             this.lbCorretoParticipioPassado.TabIndex = 31;
             this.lbCorretoParticipioPassado.Text = "Correto";
             // 
             // lbIncorretoTraducao
             // 
             this.lbIncorretoTraducao.AutoSize = true;
-            this.lbIncorretoTraducao.Location = new System.Drawing.Point(518, 332);
+            this.lbIncorretoTraducao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIncorretoTraducao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbIncorretoTraducao.Location = new System.Drawing.Point(819, 199);
             this.lbIncorretoTraducao.Name = "lbIncorretoTraducao";
-            this.lbIncorretoTraducao.Size = new System.Drawing.Size(49, 13);
+            this.lbIncorretoTraducao.Size = new System.Drawing.Size(69, 16);
             this.lbIncorretoTraducao.TabIndex = 34;
             this.lbIncorretoTraducao.Text = "Incorreto";
             // 
             // lbCorretoTraducao
             // 
             this.lbCorretoTraducao.AutoSize = true;
-            this.lbCorretoTraducao.Location = new System.Drawing.Point(518, 304);
+            this.lbCorretoTraducao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCorretoTraducao.ForeColor = System.Drawing.Color.Green;
+            this.lbCorretoTraducao.Location = new System.Drawing.Point(819, 171);
             this.lbCorretoTraducao.Name = "lbCorretoTraducao";
-            this.lbCorretoTraducao.Size = new System.Drawing.Size(41, 13);
+            this.lbCorretoTraducao.Size = new System.Drawing.Size(59, 16);
             this.lbCorretoTraducao.TabIndex = 33;
             this.lbCorretoTraducao.Text = "Correto";
             // 
             // btEnviar
             // 
-            this.btEnviar.Location = new System.Drawing.Point(58, 413);
+            this.btEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEnviar.Image = ((System.Drawing.Image)(resources.GetObject("btEnviar.Image")));
+            this.btEnviar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btEnviar.Location = new System.Drawing.Point(323, 31);
             this.btEnviar.Name = "btEnviar";
-            this.btEnviar.Size = new System.Drawing.Size(114, 23);
+            this.btEnviar.Size = new System.Drawing.Size(139, 33);
             this.btEnviar.TabIndex = 35;
-            this.btEnviar.Text = "Enviar Respostas";
+            this.btEnviar.Text = "      Enviar Respostas";
             this.btEnviar.UseVisualStyleBackColor = true;
             this.btEnviar.Click += new System.EventHandler(this.btEnviar_Click);
             // 
             // btLimpar
             // 
-            this.btLimpar.Location = new System.Drawing.Point(200, 413);
+            this.btLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btLimpar.Image")));
+            this.btLimpar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btLimpar.Location = new System.Drawing.Point(490, 31);
             this.btLimpar.Name = "btLimpar";
-            this.btLimpar.Size = new System.Drawing.Size(105, 23);
+            this.btLimpar.Size = new System.Drawing.Size(121, 33);
             this.btLimpar.TabIndex = 36;
-            this.btLimpar.Text = "Limpar Campos";
+            this.btLimpar.Text = "     Limpar Campos";
             this.btLimpar.UseVisualStyleBackColor = true;
             this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click);
             // 
             // btProximo
             // 
-            this.btProximo.Location = new System.Drawing.Point(409, 413);
+            this.btProximo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btProximo.Image = ((System.Drawing.Image)(resources.GetObject("btProximo.Image")));
+            this.btProximo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btProximo.Location = new System.Drawing.Point(701, 31);
             this.btProximo.Name = "btProximo";
-            this.btProximo.Size = new System.Drawing.Size(105, 23);
+            this.btProximo.Size = new System.Drawing.Size(118, 33);
             this.btProximo.TabIndex = 37;
-            this.btProximo.Text = "Próximo Verbo";
+            this.btProximo.Text = "     Próximo Verbo";
             this.btProximo.UseVisualStyleBackColor = true;
             this.btProximo.Click += new System.EventHandler(this.btProximo_Click);
             // 
@@ -407,63 +493,106 @@
             // 
             this.lbExemplo.AutoSize = true;
             this.lbExemplo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbExemplo.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lbExemplo.Location = new System.Drawing.Point(116, 92);
+            this.lbExemplo.ForeColor = System.Drawing.Color.Navy;
+            this.lbExemplo.Location = new System.Drawing.Point(330, 17);
             this.lbExemplo.Name = "lbExemplo";
             this.lbExemplo.Size = new System.Drawing.Size(93, 24);
             this.lbExemplo.TabIndex = 38;
             this.lbExemplo.Text = "Exemplo";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.lbPalavra);
+            this.panel1.Controls.Add(this.lbVariavelPalavra);
+            this.panel1.Controls.Add(this.lbDe);
+            this.panel1.Controls.Add(this.lbVariavelTotal);
+            this.panel1.Controls.Add(this.lbAcertos);
+            this.panel1.Controls.Add(this.lbErros);
+            this.panel1.Controls.Add(this.lbVariavelAcertos);
+            this.panel1.Controls.Add(this.lbVariavelErros);
+            this.panel1.Location = new System.Drawing.Point(0, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1094, 70);
+            this.panel1.TabIndex = 39;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.lbExemplo);
+            this.panel2.Controls.Add(this.lbVerboIrregular);
+            this.panel2.Controls.Add(this.lbVariavelVerboIrregular);
+            this.panel2.Location = new System.Drawing.Point(0, 101);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1094, 62);
+            this.panel2.TabIndex = 40;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Gray;
+            this.panel3.Controls.Add(this.PassadoSimples);
+            this.panel3.Controls.Add(this.lbVariavelTraducao);
+            this.panel3.Controls.Add(this.btTraducao);
+            this.panel3.Controls.Add(this.Infinitivo);
+            this.panel3.Controls.Add(this.ParticipioPassado);
+            this.panel3.Controls.Add(this.btInfinitivo);
+            this.panel3.Controls.Add(this.lbIncorretoTraducao);
+            this.panel3.Controls.Add(this.btPassadoSimples);
+            this.panel3.Controls.Add(this.lbCorretoTraducao);
+            this.panel3.Controls.Add(this.btParticipioPassado);
+            this.panel3.Controls.Add(this.lbIncorretoParticipioPassado);
+            this.panel3.Controls.Add(this.tbInfinitivo);
+            this.panel3.Controls.Add(this.lbCorretoParticipioPassado);
+            this.panel3.Controls.Add(this.tbPassadoSimples);
+            this.panel3.Controls.Add(this.lbIncorretoPassadoSimples);
+            this.panel3.Controls.Add(this.tbParticipioPassado);
+            this.panel3.Controls.Add(this.lbCorretoPassadoSimples);
+            this.panel3.Controls.Add(this.lbVariavelInfinitivo);
+            this.panel3.Controls.Add(this.lbIncorretoInfinitivo);
+            this.panel3.Controls.Add(this.lbVariavelPassadoSimples);
+            this.panel3.Controls.Add(this.lbCorretoInfinitivo);
+            this.panel3.Controls.Add(this.lbVariavelParticipioPassado);
+            this.panel3.Controls.Add(this.tbTraducao);
+            this.panel3.Controls.Add(this.Traducao);
+            this.panel3.Location = new System.Drawing.Point(0, 169);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1094, 287);
+            this.panel3.TabIndex = 41;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel4.Controls.Add(this.btEnviar);
+            this.panel4.Controls.Add(this.btLimpar);
+            this.panel4.Controls.Add(this.btProximo);
+            this.panel4.Location = new System.Drawing.Point(0, 484);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1094, 86);
+            this.panel4.TabIndex = 42;
+            // 
             // FormVerbosIrregulares
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 463);
-            this.Controls.Add(this.lbExemplo);
-            this.Controls.Add(this.btProximo);
-            this.Controls.Add(this.btLimpar);
-            this.Controls.Add(this.btEnviar);
-            this.Controls.Add(this.lbIncorretoTraducao);
-            this.Controls.Add(this.lbCorretoTraducao);
-            this.Controls.Add(this.lbIncorretoParticipioPassado);
-            this.Controls.Add(this.lbCorretoParticipioPassado);
-            this.Controls.Add(this.lbIncorretoPassadoSimples);
-            this.Controls.Add(this.lbCorretoPassadoSimples);
-            this.Controls.Add(this.lbIncorretoInfinitivo);
-            this.Controls.Add(this.lbCorretoInfinitivo);
-            this.Controls.Add(this.lbVariavelErros);
-            this.Controls.Add(this.lbVariavelAcertos);
-            this.Controls.Add(this.lbErros);
-            this.Controls.Add(this.lbAcertos);
-            this.Controls.Add(this.lbVariavelTotal);
-            this.Controls.Add(this.lbDe);
-            this.Controls.Add(this.lbVariavelPalavra);
-            this.Controls.Add(this.lbPalavra);
-            this.Controls.Add(this.tbTraducao);
-            this.Controls.Add(this.Traducao);
-            this.Controls.Add(this.lbVariavelParticipioPassado);
-            this.Controls.Add(this.lbVariavelPassadoSimples);
-            this.Controls.Add(this.lbVariavelInfinitivo);
-            this.Controls.Add(this.tbParticipioPassado);
-            this.Controls.Add(this.tbPassadoSimples);
-            this.Controls.Add(this.tbInfinitivo);
-            this.Controls.Add(this.btParticipioPassado);
-            this.Controls.Add(this.btPassadoSimples);
-            this.Controls.Add(this.btInfinitivo);
-            this.Controls.Add(this.ParticipioPassado);
-            this.Controls.Add(this.PassadoSimples);
-            this.Controls.Add(this.Infinitivo);
-            this.Controls.Add(this.btTraducao);
-            this.Controls.Add(this.lbVariavelTraducao);
-            this.Controls.Add(this.lbVariavelVerboIrregular);
-            this.Controls.Add(this.lbVerboIrregular);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(1094, 585);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormVerbosIrregulares";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Verbos Irregulares";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -507,6 +636,10 @@
         private System.Windows.Forms.Button btLimpar;
         private System.Windows.Forms.Button btProximo;
         private System.Windows.Forms.Label lbExemplo;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }
 

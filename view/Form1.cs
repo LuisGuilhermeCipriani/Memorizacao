@@ -216,21 +216,25 @@ namespace Memorizacao
         private void btInfinitivo_Click(object sender, EventArgs e)
         {
             lbVariavelInfinitivo.Text = verbo.getInfinitivo();
+            btInfinitivo.Enabled = false;
         }
 
         private void btPassadoSimples_Click(object sender, EventArgs e)
         {
             lbVariavelPassadoSimples.Text = verbo.gepassadoSimples();
+            btPassadoSimples.Enabled = false;
         }
 
         private void btParticipioPassado_Click(object sender, EventArgs e)
         {
             lbVariavelParticipioPassado.Text = verbo.getparticipioPassado();
+            btParticipioPassado.Enabled = false;
         }
 
         private void btTraducao_Click(object sender, EventArgs e)
         {
             lbVariavelTraducao.Text = verbo.gettraducao();
+            btTraducao.Enabled = false;
         }
 
         private void btProximo_Click(object sender, EventArgs e)
@@ -243,6 +247,16 @@ namespace Memorizacao
                 lbVariavelVerboIrregular.Text = verbo.getNome();
                 liberarTudo();
                 lbVariavelPalavra.Text = verbo.getId().ToString();
+
+                
+
+                tbInfinitivo.Text= "";
+                tbPassadoSimples.Text = "";
+                tbParticipioPassado.Text = "";
+                tbTraducao.Text = "";
+                desativarCorretoIncorreto();
+                tbInfinitivo.Focus();
+
                 if (verbo.getId() == verboController.getListaVerbos().Count())
                 {
                     btProximo.Enabled = false;

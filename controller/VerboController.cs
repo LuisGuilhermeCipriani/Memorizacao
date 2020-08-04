@@ -479,7 +479,8 @@ namespace Memorizacao.controller
 
         public Boolean verificaPassadoSimples(String passadoSimples, Verbo palavra)
         {
-            if (passadoSimples.Equals(removeAcentos(palavra.gepassadoSimples().ToLower())))
+            String semAcentos = removeAcentos(palavra.gepassadoSimples());
+                if (semAcentos.ToLower().Contains(removeAcentos(passadoSimples.ToLower())))
             {
                 return true;
             }
@@ -503,7 +504,8 @@ namespace Memorizacao.controller
 
         public Boolean verificaTraducao(String traducao, Verbo palavra)
         {
-            if (traducao.Equals(removeAcentos(palavra.gettraducao().ToLower())))
+            String semAcentos = removeAcentos(palavra.gettraducao()); 
+            if (semAcentos.ToLower().Contains(removeAcentos(traducao.ToLower())))
             {
                 return true;
             }
