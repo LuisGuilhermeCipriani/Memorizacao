@@ -12,3 +12,4 @@ C:\Git\Memorizacao\bin\Debug\Memorizacao.exe.manifest
 C:\Git\Memorizacao\bin\Debug\Memorizacao.application
 C:\Git\Memorizacao\obj\Debug\Memorizacao.exe.manifest
 C:\Git\Memorizacao\obj\Debug\Memorizacao.application
+C:\Git\Memorizacao\obj\Debug\Memorizacao.view.FormListaVerbos.resources

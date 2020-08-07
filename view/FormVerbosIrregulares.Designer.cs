@@ -80,6 +80,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btListaVerbos = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -478,7 +479,7 @@
             this.btLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btLimpar.Image")));
             this.btLimpar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btLimpar.Location = new System.Drawing.Point(525, 24);
+            this.btLimpar.Location = new System.Drawing.Point(491, 24);
             this.btLimpar.Name = "btLimpar";
             this.btLimpar.Size = new System.Drawing.Size(147, 36);
             this.btLimpar.TabIndex = 36;
@@ -491,7 +492,7 @@
             this.btProximo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btProximo.Image = ((System.Drawing.Image)(resources.GetObject("btProximo.Image")));
             this.btProximo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btProximo.Location = new System.Drawing.Point(844, 24);
+            this.btProximo.Location = new System.Drawing.Point(776, 24);
             this.btProximo.Name = "btProximo";
             this.btProximo.Size = new System.Drawing.Size(140, 36);
             this.btProximo.TabIndex = 37;
@@ -676,6 +677,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel4.Controls.Add(this.btListaVerbos);
             this.panel4.Controls.Add(this.btEnviar);
             this.panel4.Controls.Add(this.btLimpar);
             this.panel4.Controls.Add(this.btProximo);
@@ -684,6 +686,19 @@
             this.panel4.Size = new System.Drawing.Size(1376, 75);
             this.panel4.TabIndex = 42;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // btListaVerbos
+            // 
+            this.btListaVerbos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btListaVerbos.Image = ((System.Drawing.Image)(resources.GetObject("btListaVerbos.Image")));
+            this.btListaVerbos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btListaVerbos.Location = new System.Drawing.Point(932, 24);
+            this.btListaVerbos.Name = "btListaVerbos";
+            this.btListaVerbos.Size = new System.Drawing.Size(154, 36);
+            this.btListaVerbos.TabIndex = 38;
+            this.btListaVerbos.Text = "  Lista de Verbos";
+            this.btListaVerbos.UseVisualStyleBackColor = true;
+            this.btListaVerbos.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // FormVerbosIrregulares
             // 
@@ -763,6 +778,7 @@
         private System.Windows.Forms.Button btBuscar;
         private System.Windows.Forms.RadioButton rdNome;
         private System.Windows.Forms.RadioButton rdNumero;
+        private System.Windows.Forms.Button btListaVerbos;
     }
 }
 

@@ -75,6 +75,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controller\VerboController.cs" />
+    <Compile Include="view\FormListaVerbos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormListaVerbos.Designer.cs">
+      <DependentUpon>FormListaVerbos.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\FormVerbosIrregulares.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <Compile Include="view\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="model\Verbo.cs" />
+    <EmbeddedResource Include="view\FormListaVerbos.resx">
+      <DependentUpon>FormListaVerbos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\FormVerbosIrregulares.resx">
       <DependentUpon>FormVerbosIrregulares.cs</DependentUpon>
     </EmbeddedResource>

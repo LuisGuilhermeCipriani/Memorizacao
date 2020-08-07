@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Memorizacao.controller;
+using Memorizacao.view;
 
 namespace Memorizacao
 {
@@ -359,6 +360,12 @@ namespace Memorizacao
         private void lbVariavelPalavra_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            FormListaVerbos formListaVerbos = new FormListaVerbos();
+            formListaVerbos.ShowDialog();
         }
     }
 }

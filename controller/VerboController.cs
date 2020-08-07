@@ -155,8 +155,8 @@ namespace Memorizacao.controller
             Verbo verbo37 = new Verbo(37, "Forbid", "To forbid", "Forbade", "Forbidden", "Proibir");
             listaVerbos.Add(verbo37);
 
-            Verbo verbo38 = new Verbo(37, "Forget", "To forget", "Forgot", "Forgotten", "Esquecer(-se)");
-            listaVerbos.Add(verbo37);
+            Verbo verbo38 = new Verbo(38, "Forget", "To forget", "Forgot", "Forgotten", "Esquecer(-se)");
+            listaVerbos.Add(verbo38);
 
             Verbo verbo39 = new Verbo(39, "Forgive", "To forgive", "Forgave", "Forgiven", "Perdoar");
             listaVerbos.Add(verbo39);
