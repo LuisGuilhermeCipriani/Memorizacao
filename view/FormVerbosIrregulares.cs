@@ -14,13 +14,14 @@ namespace Memorizacao
     public partial class FormVerbosIrregulares : Form
     {
         VerboController verboController;
-        int num = 0;
+        static int num = 0;
         Verbo verbo;
-
+        String resposta = "-1+3..//4334\\";
         public FormVerbosIrregulares()
         {
             InitializeComponent();
-            
+            WindowState = FormWindowState.Maximized;
+
             verboController = new VerboController();
             verboController.preencheListaVerbos();
             verbo = verboController.getListaVerbos()[num];
@@ -47,6 +48,12 @@ namespace Memorizacao
             tbPassadoSimples.Enabled = false;
             tbParticipioPassado.Enabled = false;
             tbTraducao.Enabled = false;
+
+            rdNumero.Enabled = false;
+            rdNome.Enabled = false;
+
+            tbBuscar.Enabled = false;
+            btBuscar.Enabled = false;
 
             desativarCorretoIncorreto();            
         }
@@ -246,15 +253,21 @@ namespace Memorizacao
                 verbo = verboController.getListaVerbos()[num];
                 lbVariavelVerboIrregular.Text = verbo.getNome();
                 liberarTudo();
-                lbVariavelPalavra.Text = verbo.getId().ToString();
+                lbVariavelPalavra.Text = (num+1).ToString();
+                rdNumero.Enabled = true;
+                rdNome.Enabled = true;
 
-                
+                tbBuscar.Enabled = true;
+                btBuscar.Enabled = true;
+                rdNumero.Focus();
+
 
                 tbInfinitivo.Text= "";
                 tbPassadoSimples.Text = "";
                 tbParticipioPassado.Text = "";
                 tbTraducao.Text = "";
                 desativarCorretoIncorreto();
+                tbBuscar.Text = "";
                 tbInfinitivo.Focus();
 
                 if (verbo.getId() == verboController.getListaVerbos().Count())
@@ -272,6 +285,80 @@ namespace Memorizacao
             tbParticipioPassado.Text = "";
             tbTraducao.Text = "";
             tbInfinitivo.Focus();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+        private void btBuscar_Click(object sender, EventArgs e)
+        {
+            if (!(tbBuscar.Text.ToLower().Trim().Equals("")))
+            {
+                if (!(resposta.Equals(tbBuscar.Text.ToLower())))
+                {
+                    resposta = tbBuscar.Text.ToLower().Trim();
+                    if (rdNome.Checked)
+                    {
+                        liberarTudo();
+                        tbInfinitivo.Text = "";
+                        tbPassadoSimples.Text = "";
+                        tbParticipioPassado.Text = "";
+                        tbTraducao.Text = "";
+                        desativarCorretoIncorreto();
+                        foreach (Verbo v in verboController.getListaVerbos())
+                        {
+                            if (tbBuscar.Text.ToLower().Equals(v.getNome().ToLower()))
+                            {
+                                num = v.getId();
+                                verbo = verboController.getListaVerbos()[num - 1];
+                                lbVariavelVerboIrregular.Text = v.getNome();
+                                lbVariavelPalavra.Text = num.ToString();
+                                num = num - 1;
+                            }
+                            else
+                            {
+                                //MessageBox.Show("O verbo " + tbBuscar.Text + " não está cadastrado!");
+                            }
+                        }
+
+                    }
+                    else
+                    {
+                        if (rdNumero.Checked)
+                        {
+                            liberarTudo();
+                            tbInfinitivo.Text = "";
+                            tbPassadoSimples.Text = "";
+                            tbParticipioPassado.Text = "";
+                            tbTraducao.Text = "";
+                            desativarCorretoIncorreto();
+                            foreach (Verbo v in verboController.getListaVerbos())
+                            {
+                                if (tbBuscar.Text.ToLower().Equals(v.getId().ToString().ToLower()))
+                                {
+                                    num = v.getId();
+                                    verbo = verboController.getListaVerbos()[num - 1];
+                                    lbVariavelVerboIrregular.Text = v.getNome();
+                                    lbVariavelPalavra.Text = num.ToString();
+                                    num = num - 1;
+                                }
+                                else
+                                {
+                                    //MessageBox.Show("O número " + tbBuscar.Text + " não está cadastrado!");
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void lbVariavelPalavra_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -8,3 +8,7 @@ C:\Git\Memorizacao\obj\Debug\Memorizacao.csproj.CoreCompileInputs.cache
 C:\Git\Memorizacao\obj\Debug\Memorizacao.exe
 C:\Git\Memorizacao\obj\Debug\Memorizacao.pdb
 C:\Git\Memorizacao\obj\Debug\Memorizacao.FormVerbosIrregulares.resources
+C:\Git\Memorizacao\bin\Debug\Memorizacao.exe.manifest
+C:\Git\Memorizacao\bin\Debug\Memorizacao.application
+C:\Git\Memorizacao\obj\Debug\Memorizacao.exe.manifest
+C:\Git\Memorizacao\obj\Debug\Memorizacao.application
