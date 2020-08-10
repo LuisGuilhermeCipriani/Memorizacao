@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Memorizacao.exe" size="64992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Memorizacao.exe" size="65504">
       <assemblyIdentity name="Memorizacao" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wkuIMNcs9ABa+sSftBfcOjWXQbQkwsFt1gV1xCXT9XU=</dsig:DigestValue>
+        <dsig:DigestValue>VFxXkHJ0+owRQA+9uclKlH2geW24X/C1jgjIs3cJ4GE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

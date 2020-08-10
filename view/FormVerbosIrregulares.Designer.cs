@@ -332,7 +332,7 @@
             this.lbAcertos.ForeColor = System.Drawing.Color.White;
             this.lbAcertos.Image = ((System.Drawing.Image)(resources.GetObject("lbAcertos.Image")));
             this.lbAcertos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbAcertos.Location = new System.Drawing.Point(1106, 12);
+            this.lbAcertos.Location = new System.Drawing.Point(1122, 12);
             this.lbAcertos.Name = "lbAcertos";
             this.lbAcertos.Size = new System.Drawing.Size(99, 24);
             this.lbAcertos.TabIndex = 23;
@@ -345,7 +345,7 @@
             this.lbErros.ForeColor = System.Drawing.Color.White;
             this.lbErros.Image = ((System.Drawing.Image)(resources.GetObject("lbErros.Image")));
             this.lbErros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbErros.Location = new System.Drawing.Point(1229, 12);
+            this.lbErros.Location = new System.Drawing.Point(1227, 12);
             this.lbErros.Name = "lbErros";
             this.lbErros.Size = new System.Drawing.Size(78, 24);
             this.lbErros.TabIndex = 24;
@@ -356,7 +356,7 @@
             this.lbVariavelAcertos.AutoSize = true;
             this.lbVariavelAcertos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVariavelAcertos.ForeColor = System.Drawing.Color.White;
-            this.lbVariavelAcertos.Location = new System.Drawing.Point(1149, 39);
+            this.lbVariavelAcertos.Location = new System.Drawing.Point(1165, 39);
             this.lbVariavelAcertos.Name = "lbVariavelAcertos";
             this.lbVariavelAcertos.Size = new System.Drawing.Size(21, 24);
             this.lbVariavelAcertos.TabIndex = 25;
@@ -367,7 +367,7 @@
             this.lbVariavelErros.AutoSize = true;
             this.lbVariavelErros.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVariavelErros.ForeColor = System.Drawing.Color.White;
-            this.lbVariavelErros.Location = new System.Drawing.Point(1263, 39);
+            this.lbVariavelErros.Location = new System.Drawing.Point(1261, 39);
             this.lbVariavelErros.Name = "lbVariavelErros";
             this.lbVariavelErros.Size = new System.Drawing.Size(21, 24);
             this.lbVariavelErros.TabIndex = 26;
